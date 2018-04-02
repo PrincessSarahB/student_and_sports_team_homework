@@ -19,4 +19,8 @@ def get_coach
 return @Coach
 end
 
+def test_set_coach_name(new_coach)
+  @Coach = new_coach
+end
+
 end

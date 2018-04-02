@@ -20,8 +20,7 @@ def test_get_coach
 
   assert_equal("Tywin", @sports_team.get_coach)
 
-end 
-
+end
 
 
 
