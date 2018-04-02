@@ -64,10 +64,20 @@ end
 
 def test_get_book_info
 
+  assert_equal({ title: "the_amber_spyglass",
+    rental_details: {
+     student_name: "Lindsay",
+     date: "12/04/18"
+    }}, @library.get_book_info("the_amber_spyglass"))
+
+  end
+
+def test_get_rental_details
+
   assert_equal({
    student_name: "Lindsay",
    date: "12/04/18"
-  }, @library.get_book_info("the_amber_spyglass"))
+  }, @library.get_rental_details("the_amber_spyglass"))
 
   end
 
