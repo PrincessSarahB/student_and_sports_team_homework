@@ -41,7 +41,7 @@ end
 
 def test_win_or_lose__win
 
-  assert_equal(1, @sports_team.win_or_lose(1))
+  assert_equal(1, @sports_team.win_or_lose("win"))
 
 end
 

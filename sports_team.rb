@@ -40,7 +40,9 @@ end
 end
 end
 
-def win_or_lose(point)
-  @points += point
+def win_or_lose(result)
+  if result == "win"
+  @points += 1
+end
 end
 end
