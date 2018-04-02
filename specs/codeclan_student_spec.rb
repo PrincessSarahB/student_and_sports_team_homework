@@ -14,8 +14,10 @@ assert_equal("Sarah", @codeclan_student.get_student_name)
 
 end
 
+def test_get_student_cohort
+
+assert_equal(5, @codeclan_student.get_student_cohort)
+
 end
 
-# def get_student_cohort
-#
-# end
+end
