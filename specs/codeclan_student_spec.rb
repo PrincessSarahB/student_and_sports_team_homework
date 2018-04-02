@@ -20,4 +20,11 @@ assert_equal(5, @codeclan_student.get_student_cohort)
 
 end
 
+def test_update_student_name
+
+@codeclan_student.name = "Matilda"
+assert_equal("Matilda", @codeclan_student.get_student_name)
+
+end
+
 end
