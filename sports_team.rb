@@ -23,7 +23,7 @@ end
 # return @coach
 # end
 #
-# def test_set_coach_name(new_coach)
+# def set_coach_name(new_coach)
 #   @coach = new_coach
 # end
 

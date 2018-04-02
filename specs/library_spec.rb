@@ -107,4 +107,9 @@ assert_equal([
     }
   }, {title: "La Belle Sauvage", rental_details: { student_name:"", date: ""}}], @library.get_books)
 end
+
+def test_change_rental_details()
+  @library.change_rental_details("the_subtle_knife", "Karen", "18/04/18")
+assert_equal({title: "the_subtle_knife", rental_details: { student_name:"Karen", date: "18/04/18"}}, @library.get_book_info("the_subtle_knife"))
+end
 end
