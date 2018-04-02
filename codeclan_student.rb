@@ -27,7 +27,7 @@ end
 
 def set_student_cohort(cohort)
 
-  @student_cohort = cohort
+  @cohort = cohort
 
 end
 

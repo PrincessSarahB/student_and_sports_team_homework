@@ -30,7 +30,7 @@ end
 def test_set_student_cohort
 
 @codeclan_student.set_student_cohort(6)
-assert_equal(6, @codeclan_student.student_name)
+assert_equal(6, @codeclan_student.student_cohort)
 
 end
 
