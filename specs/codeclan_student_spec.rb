@@ -40,4 +40,9 @@ def test_get_student_to_talk
 
 end
 
+#Create a method that takes in a students favourite programming language and returns it as part of a string (eg. student1.say_favourite_language("Ruby") -> "I love Ruby").
+
+def test_favourite_language
+assert_equal("I love Ruby", @codeclan_student.favourite_language("Ruby"))
+end
 end

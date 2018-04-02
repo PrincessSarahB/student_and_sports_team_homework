@@ -4,6 +4,7 @@ class CodeClanStudent
 def initialize(name, cohort)
   @student_name = name
   @cohort = cohort
+
 end
 
 def student_name()
@@ -32,5 +33,12 @@ end
 
 def get_student_to_talk
   return "I can talk!"
+end
+
+def favourite_language(language)
+
+return "I love #{language}"
+
+
 end
 end
