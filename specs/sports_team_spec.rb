@@ -9,19 +9,25 @@ def setup
 end
 
 def test_get_team_name
-  assert_equal("Team Lannister",@sports_team.get_team_name)
+  assert_equal("Team Lannister",@sports_team.team_name)
 end
 
 def test_get_players
-  assert_equal(["Jaime", "Cersei", "Tyrion", "Kevan", "Lancel"], @sports_team.get_players)
+  assert_equal(["Jaime", "Cersei", "Tyrion", "Kevan", "Lancel"], @sports_team.players)
 end
 
 def test_get_coach
 
-  assert_equal("Tywin", @sports_team.get_coach)
+  assert_equal("Tywin", @sports_team.coach)
 
 end
 
+def test_set_coach_name
+
+@sports_team.coach = "Ned Stark"
+assert_equal("Ned Stark", @sports_team.coach)
+
+end
 
 
 
