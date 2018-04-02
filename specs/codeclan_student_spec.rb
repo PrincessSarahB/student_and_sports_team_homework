@@ -34,5 +34,10 @@ end
 #
 # end
 
+def test_get_student_to_talk
+
+  assert_equal("I can talk!", @codeclan_student.get_student_to_talk)
+
+end
 
 end
