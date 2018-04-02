@@ -20,12 +20,19 @@ assert_equal(5, @codeclan_student.student_cohort)
 
 end
 
-def test_update_student_name
+# def test_set_student_name
+#
+# @codeclan_student.set_student_name = "Matilda"
+# assert_equal("Matilda", @codeclan_student.student_name)
+#
+# end
 
-@codeclan_student.student_name = "Matilda"
-assert_equal("Matilda", @codeclan_student.student_name)
-
-end
+# def test_set_student_cohort
+#
+# @codeclan_student.set_student_cohort = 6
+# assert_equal(6, @codeclan_student.student_name)
+#
+# end
 
 
 end

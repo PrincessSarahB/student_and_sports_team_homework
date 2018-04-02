@@ -1,5 +1,6 @@
 class CodeClanStudent
-attr_accessor :student_name, :student_cohort
+
+# attr_accessor :student_name, :student_cohort
 def initialize(name, cohort)
   @student_name = name
   @cohort = cohort
@@ -17,9 +18,15 @@ def student_cohort()
 
 end
 
-def update_student_name(new_name)
+def set_student_name(new_name)
 
   @student_name = new_name
+
+end
+
+def set_student_cohort(cohort)
+
+  @student_cohort = cohort
 
 end
 end
