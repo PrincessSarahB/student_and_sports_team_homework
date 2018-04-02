@@ -33,7 +33,7 @@ def setup
 
 end
 
-def test_get_books
+def test_get_books()
 
 assert_equal([
   {
@@ -58,6 +58,17 @@ assert_equal([
      date: "12/04/18"
     }
   }
-], @library.get_books)
+], @library.get_books())
+
 end
+
+def test_get_book_info
+
+  assert_equal({
+   student_name: "Lindsay",
+   date: "12/04/18"
+  }, @library.get_book_info("the_amber_spyglass"))
+
+  end
+
 end
