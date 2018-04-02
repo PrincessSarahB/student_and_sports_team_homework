@@ -24,4 +24,9 @@ for book in @library
 end
 end
 
+def add_new_book_to_library(new_book)
+  
+  @library.push(new_book)
+
+end
 end

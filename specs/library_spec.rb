@@ -80,5 +80,31 @@ def test_get_rental_details
   }, @library.get_rental_details("the_amber_spyglass"))
 
   end
+def test_add_new_book_to_library()
+  new_book = {title: "La Belle Sauvage", rental_details: { student_name:"", date: ""}}
+@library.add_new_book_to_library(new_book)
+assert_equal([
+  {
+  title: "the_northern_lights",
+  rental_details: {
+   student_name: "Graeme",
+   date: "03/04/18"
+ }
+},
 
+{
+  title: "the_subtle_knife",
+  rental_details: {
+   student_name: "Janice",
+   date: "15/04/18"
+  }
+},
+  {
+    title: "the_amber_spyglass",
+    rental_details: {
+     student_name: "Lindsay",
+     date: "12/04/18"
+    }
+  }, {title: "La Belle Sauvage", rental_details: { student_name:"", date: ""}}], @library.get_books)
+end
 end
