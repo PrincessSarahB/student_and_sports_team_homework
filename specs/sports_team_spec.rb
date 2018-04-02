@@ -8,8 +8,9 @@ def setup
 @sports_team = SportsTeam.new("Team Lannister", ["Jaime", "Cersei", "Tyrion", "Kevan", "Lancel"], "Tywin")
 end
 
-
-
+def test_get_team_name
+  assert_equal("Team Lannister",@sports_team.get_team_name)
+end
 
 
 
