@@ -15,5 +15,8 @@ def get_players
 return @Players
 end
 
+def get_coach
+return @Coach
+end
 
 end
