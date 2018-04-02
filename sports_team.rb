@@ -26,4 +26,7 @@ end
 #   @coach = new_coach
 # end
 
+def add_new_player(new_player)
+  @players.push(new_player)
+end
 end

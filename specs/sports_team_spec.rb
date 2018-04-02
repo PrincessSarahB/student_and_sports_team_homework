@@ -29,7 +29,11 @@ assert_equal("Ned Stark", @sports_team.coach)
 
 end
 
+def test_add_new_player
+@sports_team.add_new_player("Sansa")
+assert_equal(["Jaime", "Cersei", "Tyrion", "Kevan", "Lancel", "Sansa"], @sports_team.players)
 
+end
 
 
 
