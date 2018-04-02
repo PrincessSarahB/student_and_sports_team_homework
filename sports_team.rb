@@ -29,4 +29,15 @@ end
 def add_new_player(new_player)
   @players.push(new_player)
 end
+
+def check_player_by_name(player_name)
+
+for player in @players
+if player_name == player
+  return true
+end
+end
+end
+
+
 end

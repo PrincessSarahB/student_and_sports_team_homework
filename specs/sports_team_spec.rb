@@ -35,7 +35,9 @@ assert_equal(["Jaime", "Cersei", "Tyrion", "Kevan", "Lancel", "Sansa"], @sports_
 
 end
 
-
+def test_check_player_by_name
+assert_equal(true, @sports_team.check_player_by_name("Tyrion"))
+end
 
 
 
