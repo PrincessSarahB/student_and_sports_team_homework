@@ -2,11 +2,12 @@ class SportsTeam
 
   attr_accessor :team_name, :players, :coach
 
-def initialize(team_name, players, coach)
+def initialize(team_name, players, coach, points)
 
 @team_name = team_name
 @players = players
 @coach = coach
+@points = 0
 
 end
 
@@ -39,5 +40,7 @@ end
 end
 end
 
-
+def win_or_lose(point)
+  @points += point
+end
 end
