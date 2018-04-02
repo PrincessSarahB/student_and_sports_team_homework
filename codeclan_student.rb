@@ -5,5 +5,9 @@ def initialize(name, cohort)
   @cohort = cohort
 end
 
+def get_student_name()
 
+  return @name
+
+end 
 end

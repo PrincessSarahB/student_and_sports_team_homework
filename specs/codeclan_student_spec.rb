@@ -8,9 +8,12 @@ class TestCodeClanStudent < MiniTest::Test
 @codeclan_student = CodeClanStudent.new("Sarah", 5)
   end
 
-def get_student_name
+def test_get_student_name
 
-assert_equal("Sarah", @codeclan_student.name)
+assert_equal("Sarah", @codeclan_student.get_student_name)
+
+end
+
 end
 
 # def get_student_cohort
